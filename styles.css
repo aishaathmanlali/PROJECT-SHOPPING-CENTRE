@@ -1,54 +1,108 @@
-body {
-    background-color: beige;
-}
-#image {
-    width: 600px;
-    text-align: center;
-}
-#heading {
-    text-align: center;
-    color: #ff006e;
-    font-size: xx-large;
-    font-family: 'Times New Roman', Times, serif;
-}
-#sub-heading {
-    font-size: xx-large;
-    margin-left: 40px;
-}
-#category {
-    font-size: x-large;
-}
-.button {
-    border-radius: 20px;
-    border-color: #ff006e;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: larger;
-    margin-top: 10px;   
-}
-.list {
-    font-size: large;
-    color: #344E41;
-}
-#text {
-    font-size: x-large;
-}
-.input {
-    border: 2px black solid;
-    padding: 5px;
-    margin-left: 10px;
-}
-#add {
-    padding: 5px 10px;
-    width: 200px;
-    font-size: large;
-}
-#info {
-    font-size: larger;
-}
-#button-comment {
-    padding: 5px 10px;
-    width: 200px;
-    font-size: large;
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Satisfy&display=swap");
+html {
+  margin: 2em;
 }
 
+body {
+  background-color: beige;
+  margin: 1%;
+}
+
+#image {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+#heading {
+  text-align: center;
+  color: #ff006e;
+  font-size: 2.5em;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Satisfy", cursive;
+}
+#sub-heading {
+  font-size: xx-large;
+  text-align: center;
+  margin: 3%;
+}
+#category {
+  font-size: x-large;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  margin: 3% 20%;
+}
+.child {
+  flex: 10;
+}
+.button {
+  border-radius: 20px;
+  border-color: #ff006e;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+
+.list {
+  font-size: 1.25em;
+  color: rgb(9, 86, 26);
+}
+
+.addToBasket {
+  margin: 5% 20%;
+}
+
+#text {
+  font-size: x-large;
+}
+.inputContainer {
+  display: flex;
+}
+.input {
+  border: 2px black solid;
+  padding: 5px;
+  flex: 1;
+}
+#add {
+  padding: 5px 10px;
+  width: 200px;
+  font-size: large;
+  flex: 1;
+}
+
+#number {
+  margin: 0 5%;
+}
+
+footer {
+  padding: 1%;
+  text-align: center;
+  background-color: #ff006e;
+  font-size: 1.2em;
+}
+
+.commentContainer {
+  display: flex;
+}
+
+#info {
+  font-size: larger;
+}
+#comment {
+  flex: 7;
+  font-size: 1.1em;
+}
+#button-comment {
+  font-size: large;
+  margin: 0 1%;
+  flex: 1;
+}

@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>AISHA'S SHOPPING CENTRE</title>
-</head>
-<body>
-    <img id="image" src="https://logos.textgiraffe.com/logos/logo-name/Aisha-designstyle-love-panda-m.png">
+  </head>
+  <body>
+    <img
+      id="image"
+      src="https://logos.textgiraffe.com/logos/logo-name/Aisha-designstyle-love-panda-m.png"
+    />
     <h1 id="heading">WELCOME TO AISHA'S SHOPPING CENTRE</h1>
     <h2 id="sub-heading">📦Our Products📦</h2>
-    <h3 class="category">Click the category you like:</h3>
-    <button class="button" id="women">Women 👩🏻‍🦰</button>
-    <ul class="list" id="list-women"></ul>
-    <button class="button" id="men">Men 👱🏼‍♂️</button>
-    <ul class="list" id="list-men"></ul>
-    <button class="button" id="children">Children 🧒🏻👦🏼</button>
-    <ul class="list" id="list-children"></ul>
-    <button class="button" id="babies">Babies 👶🏻👶🏻</button>
-    <ul class="list" id="list-babies"></ul>
-    <p id="text">Type what you want ⬇️ and the quantity 🔢</p>
-    <input class="input" id="input" placeholder="product" />
-    <input class="input" id="number" placeholder="quantity" />
-    <button class="input" id="add">Add to Basket 🗑️</button>
-    <ul class="list" id="list-basket"></ul>
-    <h3 class="category">THANK YOU FOR SHOPPING WITH US 🧿</h3>
-    <h4 id="info">Please leave a comment!</h4>
-    <input class="input" id="comment" />
-    <button class="input" id="button-comment">COMMENT</button>
-    <p class="list" id="feedback"></p>
-    <p class="list" id="note"></p>
+    <h3 id="category">Choose the category you like:</h3>
+    <div class="container">
+      <div class="child">
+        <button class="button" id="women">Women 👩🏻‍🦰</button>
+        <ul class="list" id="list-women"></ul>
+      </div>
+      <div class="child">
+        <button class="button" id="men">Men 👱🏼‍♂️</button>
+        <ul class="list" id="list-men"></ul>
+      </div>
+      <div class="child">
+        <button class="button" id="children">Children 🧒🏻👦🏼</button>
+        <ul class="list" id="list-children"></ul>
+      </div>
+      <div class="child">
+        <button class="button" id="babies">Babies 👶🏻👶🏻</button>
+        <ul class="list" id="list-babies"></ul>
+      </div>
+    </div>
+    <div class="addToBasket">
+      <p id="text">Type what you want ⬇️ and the quantity 🔢</p>
+      <div class="inputContainer">
+        <input class="input" id="input" placeholder="product" />
+        <input class="input" id="number" placeholder="quantity" />
+        <button class="input" id="add">Add to Basket 🗑️</button>
+      </div>
+      <ul class="list" id="list-basket"></ul>
+    </div>
+    <footer>
+      <h3>THANK YOU FOR SHOPPING WITH US 🧿</h3>
+      <h4 id="info">Please leave a comment!</h4>
+      <div class="commentContainer">
+        <textarea class="input" id="comment" rows="4" cols="50"> </textarea>
+        <button class="input" id="button-comment">COMMENT</button>
+      </div>
+      <p id="feedback"></p>
+      <p id="note"></p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
